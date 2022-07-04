@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Noto+Sans+TC:wght@300&display=swap');
+
+body {
+    font-family: 'Josefin Sans', 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    padding-top: 60px;
+background-image: url(./product_img/c99077401391d1add1db8981766c736f.jpg);
+    /* background: -webkit-linear-gradient(rgba(0, 0, 16, 0.9), rgba(7, 4, 93, 0.7), rgba(0, 0, 16, 0.9)); */
+    /* background: -o-linear-gradient(rgb(64, 0, 255,0.9),rgba(242, 131, 203, 0.3),rgba(6, 246, 246, 0.1),rgba(8, 1, 28, 0.9));
+    background: -moz-linear-gradient(rgb(64, 0, 255,0.9),rgba(242, 131, 203, 0.3),rgba(6, 246, 246, 0.1),rgba(8, 1, 28, 0.9));
+    background: linear-gradient(rgb(64, 0, 255,0.9),rgba(242, 131, 203, 0.3),rgba(6, 246, 246, 0.1),rgba(8, 1, 28, 0.9));  */
+}
+
+/* 頂部navbar */
+.navbar {
+    padding: 0;
+    background-color: rgba(0, 0, 16, 0.7);
+}
+
+.nav-link {
+    color: #c7000a !important;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.nav-link:hover {
+    color: rgb(8, 149, 250) !important;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.nav-link:active{
+    color:#e600a0 !important;
+}
+
+/* 下拉第二層 */
+.dropdown-item {
+    color: aliceblue !important;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:focus {
+    color: rgb(8, 149, 250) !important;
+    background-color: rgba(0, 0, 16); 
+    border-radius: 8px;
+}
+.dropdown .dropdown-item:active{
+    color:#e600a0 !important;
+}
+
+
+#content {
+    margin-top: 10px;
+}
+
+marquee {
+    color: aliceblue;
+    height: 50px;    
+    line-height: 50px;    
+}
+
+/* 搜尋sidebar */
+.row .sidebar {
+    border: #e600a0 1px solid;
+    background-color: rgba(198, 9, 2, 0.8) !important;    
+}
+
+.sidebar {
+    padding: 5px;
+}
+
+/* card：左邊table和中間產品 */
+.card-body table td:hover {
+    background-color: rgba(198, 9, 2, 0.8);
+    color: aliceblue !important;     
+}
+.card{
+    border: #c7000a 1px solid; 
+    background-color: rgba(0, 0, 16,0.3);   
+}
+
+.card-header{
+    background-color: rgba(0, 0, 16); 
+    /* 左邊第一層底色    */
+}
+.btn-link{
+    color: #c7000a;
+    /* 左邊第一層文字 */
+}
+.btn-link:hover,
+.btn-link:focus{
+    color: rgb(8, 149, 250) ;
+    background-color: rgba(0, 0, 16); 
+    text-decoration: none;
+}
+.btn-link:active{
+    color:#e600a0 !important;
+}
+
+.card-body {
+    padding: 0;
+    color: aliceblue !important;
+    background-color: rgba(0, 0, 16,0.5); 
+}
+
+.table {
+    margin-bottom: 0;    
+}
+
+.table td {
+    border-top: none;
+    border-top: 1px solid #650047;
+    padding-left: 2.5rem;
+    color:  rgba(0, 0, 16) ;
+    background-color:rgba(0, 0, 16);
+}
+
+td>em {
+    margin-right: 5px;
+}
+
+/* 頁碼 */
+.page-link{
+    font-size: large;
+    background-color: rgba(0, 0, 16, 0.8);
+    border: 1px solid #c7000a;
+}
+.page-link:hover{
+    background-color: rgba(198, 9, 2, 0.8);
+    color: aliceblue ;
+    border: 1px solid #c7000a;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #e600a0;
+}
+.page-item.disabled .page-link {    
+    background-color: rgba(0, 0, 16, 0.8);
+    border: 1px solid #c7000a;
+}
+/* 連結文字 */
+a {
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;  
+}
+a:active{
+    color:#e600a0 !important;
+}
+a:hover{
+    color:rgb(8, 149, 250);
+    text-decoration: none;
+}
+
+
+
+/* 關於我們 */
+#aboutme {
+    background-color: rgba(1, 14, 26, 0.4);
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* 最後資料列 */
+#last-data {
+    height: 100px;
+    background-color: rgba(0, 0, 16, 0.8);
+    padding-top: 10px;
+    color: #fff;
+}
+
+/* 建立video-background play of DIV 套用main.php */
+#video-background,
+.video-background iframe {
+    /* 設定video為全版的最底層位置 */
+    width: 33.3%;
+    height: auto;
+    /* max-width: 40%; */
+    min-height: 100%;
+    position: fixed;
+    /* 位置釘死 */
+    top: 0px;
+    /* left: 0px; */
+    right: 0px;
+    bottom: 0px;
+    z-index: -100;
+    /* 最底的100層 */    
+}
+/* 自訂1-先預設是隱藏*/ 
+.hide-in-phone{display:none} 
+
+/* 自訂2-若寬度大於992px就顯示video 套用main.php  sidebar.php、hot.ph*/ 
+@media only screen and (min-width:992px) { 
+    .hide-in-phone { 
+        display: block; 
+    } 
+}
+
+
+
+/* 建立video-background play of DIV 套用main2.php */
+#main2 #video-background,
+#main2 .video-background iframe {
+    /* 設定video為全版的最底層位置 */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    min-height: 100%;
+    /* position: fixed; */
+    position: relative;
+    /* 位置釘死 */
+    /* top: 0px;
+    left: 0px;
+    right: 5px;
+    bottom: 0px; */
+    z-index: -100;
+    /* 最底的100層 */    
+}
+
+/* 建立文字特效DIV2 套用index.php、index01.php */
+.video-caption {
+    margin-top: 0px;
+}
+
+.video-caption.text-center h1 {
+    color: #c7000a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.margintop-30 {
+    margin-top: 30px;
+}
+
+
+/* js的設定頂部次三層的功能表css */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    background-color: rgba(0, 0, 16, 0.8); 
+    padding: 6px;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;    
+}
+
+.dropdown-menu.show a:active {
+    color: #e600a0;
+}
+
+
+
+/* 熱銷商品css */
+.card.text-center.mt-3 img {
+    opacity: 1;
+    transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+}
+
+.card.text-center.mt-3 img:hover {
+    opacity: 0.5;
+    border: #e600a0 1px solid;
+}
+
+/* 小版面的三條線 */
+.navbar-light .navbar-toggler {    
+    border: #e600a0 1px solid;
+    background-color: #c7000a;
+}
+
+.carousel{
+    display: block;
+}
+
+/* 面包屑 */
+.breadcrumb{
+    background-color: rgba(0, 0, 16, 0.7);
+}
+.breadcrumb-item{
+    color: #dc3545 !important;
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* 沒有相關產品 */
+.alert-danger {
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+    background-color: rgba(198, 9, 2, 0.5); 
+    border-color: rgba(198, 9, 2, 0.5);
+}
+
+/* goods商品介紹css */
+.card .row.mt-2 .col-md-4 a>img:hover{
+    border: #e600a0 1px solid;
+}
+
+.color_e600a0{
+    color: #e600a0;
+    font-weight: bolder;
+    
+    /* 價格 */
+}
+.color-primary{
+    color: aliceblue;
+    background-color: rgb(8, 149, 250);
+    border-color: rgb(8, 149, 250);
+    /* 數量 */
+}
+
+.product{
+    color: aliceblue;
+    font-weight: bolder;       
+}
+
+.product-text {
+    color: #c7000a !important;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.product-text:hover {
+    color: rgb(8, 149, 250) !important;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+/* 購物車 */
+.badge.badge-primary{
+    font-size: 30%;
+}
+
+/* cart_content.php購物車 */
+.color_red{
+    color: #dc3545 ;   
+    /* 被鎖定，無法變色  */
+}
+.table-responsive-md table td{
+    text-align: center;
+    color: aliceblue !important;
+    font-size: 12pt;
+}
+
+.table-responsive-md table tfoot td{
+    text-align: center;
+    background-color: rgba(0, 0, 16, 0.1);
+    color: aliceblue !important;
+}
+
+.form-control{
+    font-weight: bold;      
+}
+
+.mycard.mycard-container {
+    max-width: 550px;
+    height: 1150px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(13, 10, 10),rgb(32, 22, 99), rgb(92, 0, 33));
+    color: aliceblue;    
+}
+
+.mycard {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.profile-img-card {
+    margin: 0 auto 10px auto;
+    display: block;
+    width: 150px;
+}
+
+.profile-name-card {
+    font-size: 20px;
+    text-align: center;
+}
+.btn.btn-signin {
+    font-weight: 700;
+    background-color: rgb(195, 5, 2);
+    color: aliceblue;
+    height: 38px;
+    transition: all 1s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(05, 05, 55);
+    color: red;            
+}
+
+.btn-signin {
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;            
+}
